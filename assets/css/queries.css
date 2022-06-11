@@ -13,6 +13,7 @@
 
       .form{
           padding: 5.6rem 0;
+          z-index: 1;
       }
 
       .sign-up{
