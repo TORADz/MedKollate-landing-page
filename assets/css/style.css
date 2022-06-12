@@ -2,9 +2,11 @@
     --primary-color: 78, 214, 176;
     --secondary-color: 26, 161, 229;
 
-    --gray: 112, 112, 112;
+    --gray: rgb(112, 112, 112);
     --white: #FFFFFF;
     --black: #000000;
+    --green: #4ed6b0;
+    --blue: #1aa1e5;
 
     --Roboto: 'Roboto', sans-serif;
 }
@@ -35,8 +37,20 @@ main section {
 }
 
 .form h1 {
-    font-size: 5rem;
-    color: var(--gray);
+    font-size: 6rem;
+    color: var(--green);
+    font-family: var(--Roboto);
+    line-height: 20px;
+}
+
+.form h1 span {
+    font-size: 1.9rem;
+    color: var(--blue);
+}
+
+.form h2 {
+    font-size: 3rem;
+    color: var(--blue);
     font-family: var(--Roboto);
 }
 
@@ -100,11 +114,12 @@ main section {
 }
 
 .search-bar button {
-    background: rgb(var(--secondary-color));
+    background: rgb(var(--primary-color));
     color: var(--white);
     height: inherit;
     padding: 2rem;
     border-radius: 2rem;
+    font-weight: 600;
     font-size: 1.5em;
     display: flex;
     align-items: center;
@@ -114,7 +129,7 @@ main section {
 }
 
 .search-bar button:hover {
-    background: rgba(var(--primary-color), 0.5);
+    background: rgba(var(--secondary-color));
 }
 
 footer {
@@ -145,7 +160,7 @@ footer .social-icons a i {
 
 footer .social-icons a i:hover,
 footer .social-links a:hover {
-    color: rgba(var(--primary-color), 0.5);
+    color: rgba(var(--primary-color));
 }
 
 footer .social-links {
