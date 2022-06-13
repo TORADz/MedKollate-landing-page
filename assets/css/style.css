@@ -8,7 +8,7 @@
     --green: #4ed6b0;
     --blue: #1aa1e5;
 
-    --Roboto: 'Roboto', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
 }
 
 header {
@@ -39,19 +39,29 @@ main section {
 .form h1 {
     font-size: 6rem;
     color: var(--green);
-    font-family: var(--Roboto);
-    line-height: 20px;
+    font-family: var(--Poppins);
+    line-height: 0.5;
 }
 
 .form h1 span {
     font-size: 1.9rem;
     color: var(--blue);
+    font-weight: 400;
 }
 
 .form h2 {
-    font-size: 3rem;
-    color: var(--blue);
-    font-family: var(--Roboto);
+    font-size: 4rem;
+    background: -webkit-linear-gradient(rgb(var(--primary-color)), rgb(var(--secondary-color)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-family: var(--Poppins);
+}
+
+.form input[type='email']::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
 }
 
 .form p {
@@ -126,10 +136,12 @@ main section {
     border: none;
     outline: none;
     transition: all 500ms;
+    font-family: var(--Poppins);
 }
 
 .search-bar button:hover {
     background: rgba(var(--secondary-color));
+    filter: contrast(120%) brightness(110%);
 }
 
 footer {
@@ -148,7 +160,6 @@ footer .social-links a {
     padding: 2rem;
     height: 2rem;
     color: var(--gray);
-    /* border: 1px solid var(--gray); */
     cursor: pointer;
     transition: ease-in 700ms;
 
