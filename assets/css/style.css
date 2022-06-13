@@ -52,6 +52,7 @@ main section {
 .form h2 {
     font-size: 4rem;
     background: -webkit-linear-gradient(rgb(var(--primary-color)), rgb(var(--secondary-color)));
+    background: linear-gradient(rgb(var(--primary-color)), rgb(var(--secondary-color)));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
