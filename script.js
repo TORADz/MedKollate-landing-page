@@ -1,6 +1,9 @@
-const btn = document.querySelector('button');
-const form = document.querySelector('form');
-btn.addEventListener('click', popup);
+const submit = document.querySelector('#submit');
+const form = document.querySelector('.form');
+
+submit.addEventListener('click', (e) => {
+    return popup();
+});
 
 (function ($) {
     window.fnames = new Array();
@@ -16,8 +19,29 @@ btn.addEventListener('click', popup);
 }(jQuery));
 var $mcj = jQuery.noConflict(true);
 
-function popup(e) {
-    const div = document.createElement(div);
+function popup() {
+    const div = document.createElement('div');
     div.classList.add('popup');
-    form.appendChild(div);
-}
+    document.body.appendChild(div);
+
+    const div_1 = document.createElement('div');
+    div_1.setAttribute('id', 'hover')
+    div.appendChild(div_1);
+    
+    const div_2 = document.createElement('div');
+    div_2.classList.add('img');
+    div_2.innerHTML = "<img src=\"./assets/imgs/email.png\">";
+    div_1.appendChild(div_2);
+
+    const h2 = document.createElement('h2');
+    h2.innerText = 'Thanks For Subscribing';
+    div_1.appendChild(h2);
+
+    const para = document.createElement('p');
+    para.innerText = 'We would get back to you';
+    div_1.appendChild(para);
+
+    const btn_2 = document.createElement('button');
+    btn_2.innerHTML = '<a href="./index.html"> Back To Home</a>';
+    div_1.appendChild(btn_2);
+};
