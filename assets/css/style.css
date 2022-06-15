@@ -72,6 +72,12 @@ main section {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.form .popup {
+    width: 20px;
+    height: 20px;
+    background: #000000;
+}
+
 /* SEMI-CIRCLE */
 
 .form-img-bg {

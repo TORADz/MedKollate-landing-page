@@ -1,3 +1,7 @@
+const btn = document.querySelector('button');
+const form = document.querySelector('form');
+btn.addEventListener('click', popup);
+
 (function ($) {
     window.fnames = new Array();
     window.ftypes = new Array(); fnames[0] = 'EMAIL';
@@ -11,3 +15,9 @@
     ftypes[5] = 'birthday';
 }(jQuery));
 var $mcj = jQuery.noConflict(true);
+
+function popup(e) {
+    const div = document.createElement(div);
+    div.classList.add('popup');
+    form.appendChild(div);
+}
