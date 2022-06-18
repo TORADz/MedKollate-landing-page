@@ -43,6 +43,7 @@ main section {
     font-size: 5rem;
     color: var(--gray);
     font-family: var(--Roboto);
+    line-height: 1.2rem;
 }
 
 .form p {
