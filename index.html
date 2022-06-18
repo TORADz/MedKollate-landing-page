@@ -106,6 +106,8 @@
             // Optional parameters
             direction: 'vertical',
             loop: true,
+            observer: true,
+            observerParents: true,
 
             // If we need pagination
             pagination: {
@@ -123,7 +125,7 @@
                 el: '.swiper-scrollbar',
             },
         });
-        console.log(swiper);
+        console.log(e.target, swiper);
     </script>
 
     
