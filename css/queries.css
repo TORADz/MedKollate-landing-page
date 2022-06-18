@@ -1,0 +1,48 @@
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em){
+    .grid {
+        row-gap: 4.8rem;
+      }
+    
+      .grid--2-cols {
+        grid-template-columns: 1fr;
+      }
+
+      .form{
+          padding: 3.6rem 0;
+          text-align: center;
+      }
+      
+      .form-img-bg{
+          padding: 3.6rem 0 0 0;
+      }
+
+      .sign-up{
+        gap: 3rem;
+      }
+
+      main{
+        flex-direction: column-reverse;
+      }
+
+      .form p{
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      footer{
+        margin-bottom: 2rem;
+      }
+
+      footer div{
+          flex-direction: column;
+          gap: 5rem;
+      }
+
+      footer .social-links{
+        display: flex;
+      }
+}
