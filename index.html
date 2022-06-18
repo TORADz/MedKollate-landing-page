@@ -9,66 +9,125 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/queries.css">
+
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,100;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./assets/imgs/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 </head>
 
 <body>
     <header class="flex container align-center">
         <!-- Logo Here  -->
-         <img src="./assets/imgs/logo.png" alt="Logo Image" class="logo">
-         <a href="#">Blo<span>g</span></a>
-        
+        <img src="./assets/imgs/logo.png" alt="Logo Image" class="logo">
+
+        <div class="heading title">
+        </div>
     </header>
-    <main class="grid grid--2-cols container">
-        
+    <main class="flex container">
+
         <section class="form">
             <div class="sign-up flex column">
-              <p>...Coming Soon</p>
-              <h1>MedKollate  <span>cataloguing health record</span></h1>
-              <h2>Get Notified When We Launch</h2>
-              <form action="https://gmail.us17.list-manage.com/subscribe/post?u=2e934d6235de3f841565553fb&amp;id=23b29b4d44"
-              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate search-bar flex align-center"
-              target="_blank" novalidate>
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email here" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                <button id="submit" type="submit">
-                  Notify Me
-                </button>
-              </form>
-              <p>*Don't worry we will not spam you</p>
+                <p>...Coming Soon</p>
+                <h1>Get Notified When We Launch</h1>
+                <form
+                    action="https://gmail.us17.list-manage.com/subscribe/post?u=2e934d6235de3f841565553fb&amp;id=23b29b4d44"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                    class="validate search-bar flex align-center" target="_blank" novalidate>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                        placeholder="Enter your email here" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <button type="submit">
+                        Notify Me
+                    </button>
+                </form>
+                <p>*Don't worry we will not spam you</p>
             </div>
-          </section>
+        </section>
 
-          <section class="form-img-bg">
-            <!-- This is an img section -->
-            <img src="./assets/imgs/consultation.jpg" alt="EMR track notification image">
-          </section>
+        <section class="form-img-bg">
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <img class="swiper-slide" src="./assets/imgs/consultation.jpg" alt="EMR track notification image">
+                    <img class="swiper-slide" src="./assets/imgs/hero_img.jpg" alt="EMR track notification image"> 
+                    <img class="swiper-slide" src="./assets/imgs/hospitals_s3.jpg" alt="EMR track notification image">
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </section>
     </main>
 
-    <footer class="container flex align-center">
-      <!-- Social Links -->
-        <div class="social-icons">
-            <a href="https://www.facebook.com/104473242299645/posts/pfbid02kg65LRCpzBdGowP5MjZUs2NhqgEQb1R9yW91G8xUSHXttXksjhuFFDbgXpmjD5K6l/"  style="color: #4267B2;"> <i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com/MedKollate?t=bJUe8Etl3QF8lZigdz3wlw&s=09" style="color: #00acee;"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#instagram" style="color: #3f729b;">  <i class="fa-brands fa-instagram"></i></i></a>
-        </div>
-        
-        <div class="social-links">
-            <a href="./FAQindex.html"> FAQ</a>
-            <a href="./privacy-policy.html"> Privacy Policy</a>
-            <a href="https://MedKollate@gmail.com">Email Us</a>
-            
+    <footer>
+        <div class="container flex align-center">
+            <div class="social-icons">
+                <a href="#facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#twitter"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#whatapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="#instagram"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="social-links">
+                <a href="./FAQ.html"> FAQ</a>
+                <a href="./privacy-policy.html"> Privacy Policy</a>
+                <a href="./email.html">Email Us</a>
+
+            </div>
         </div>
     </footer>
-    
-    
+
+    <script src="./assets/js/script.js"></script>
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript' src="/script.js"></script>
-  </body>
+
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+        console.log(swiper);
+    </script>
+
+    
+
+
+</body>
 
 </html>
