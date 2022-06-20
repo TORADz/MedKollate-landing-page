@@ -330,3 +330,9 @@ footer .social-links a:hover {
 .contain p, .contain li {
     font-size: 1.5rem;
 }
+
+/* Privacy Policy */
+
+.policy {
+    height: 70vh;
+}

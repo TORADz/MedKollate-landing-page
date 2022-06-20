@@ -12,12 +12,47 @@
   }
 
   .form {
-    padding: 5.6rem 0;
+    padding: 3rem 0;
     z-index: 1;
+  }
+
+  .form h1 {
+    font-size: 4rem;
+  }
+
+  .form h1 span {
+    font-size: 1.5rem;
+  }
+
+  .form h2 {
+    font-size: 2rem;
   }
 
   .sign-up {
     gap: 3rem;
+  }
+
+  .sign-up p {
+    font-size: 1.4rem;
+  }
+
+  .search-bar {
+    width: 250px;
+    height: 30px;
+  }
+
+  .search-bar input[type='email'] {
+    padding: 0 10px;
+    font-size: 1rem;
+  }
+
+  .search-bar input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .search-bar button {
+    font-size: 1rem;
+    padding: 1rem;
   }
 
   .form-img-bg {
@@ -28,8 +63,20 @@
     visibility: hidden;
   }
 
+  .policy h1 {
+    font-size: 5rem;
+  }
+
   footer {
     flex-direction: column;
     gap: 5rem;
+  }
+
+  footer .social-icons a i {
+    font-size: 2rem;
+  }
+
+  footer .social-links a {
+    font-size: 1.3rem;
   }
 }
