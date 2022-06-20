@@ -242,6 +242,7 @@ main section {
 footer {
     min-height: 30px;
     justify-content: space-between;
+    padding-bottom: 2rem;
 }
 
 footer .social-icons,
@@ -281,4 +282,51 @@ footer .social-links a {
 
 footer .social-links a:hover {
     text-decoration: underline;
+}
+
+/* FAQs */
+
+.contain {
+    padding: 2rem 20rem;
+    margin-bottom: 4rem;
+    font-family: var(--Poppins);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-faq, .blue-faq {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 5rem;
+}
+
+.green-faq {
+    background-color: #4ed6af67;
+}
+
+.blue-faq {
+    background-color: #1aa1e51f;
+}
+
+.contain h1 {
+    font-size: 6rem;
+    padding: 2rem 0;
+}
+
+.contain ol {
+    margin-top: 3rem;
+}
+
+
+.contain h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-size: 500;
+    margin: 2rem 0;
+}
+
+.contain p, .contain li {
+    font-size: 1.5rem;
 }
